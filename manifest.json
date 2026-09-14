@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Steam: цены UAH|RUB|KZT с флагами",
+  "version": "2.1.0",
+  "description": "Показывает цены в гривнах, рублях и тенге; кэш курсов на 24 часа.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://store.steampowered.com/*",
+    "https://open.er-api.com/*",
+    "https://cdn.jsdelivr.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
