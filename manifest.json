@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Steam: цены UAH|RUB|KZT с флагами",
-  "version": "2.1.0",
-  "description": "Показывает цены в гривнах, рублях и тенге; кэш курсов на 24 часа.",
+  "name": "SteamPricesViaClient",
+  "version": "2.2.0",
+  "description": "Allows you to show UAH, KZT, and RUB currencies in the Steam client",
   "permissions": [
     "storage"
   ],
